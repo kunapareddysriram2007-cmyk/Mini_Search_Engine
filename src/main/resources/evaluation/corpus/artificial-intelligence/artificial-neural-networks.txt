@@ -1,0 +1,12 @@
+type: Article
+date: 2024-04-10
+category: artificial-intelligence
+language: English
+title: Artificial Neural Networks and Deep Learning
+overview: Artificial neural networks are computing systems inspired by biological neural networks, forming the foundation of deep learning.
+
+## Network Architecture and Layers
+A multi-layer perceptron (MLP) consists of an input layer, one or more hidden layers with non-linear activation functions (ReLU, GELU), and an output layer producing predictions.
+
+## Backpropagation and Training
+The backpropagation algorithm calculates partial derivatives of the loss function with respect to weights using the mathematical chain rule, enabling gradient-based parameter updates.

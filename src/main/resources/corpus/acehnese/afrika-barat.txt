@@ -1,0 +1,53 @@
+type: Wikipedia
+date: 2023-11-01
+title: Afrika Barat
+overview: Afrika Barat nakeuh saboh kawasan blah barat Afrika.
+
+## Overview
+Afrika Barat nakeuh saboh kawasan blah barat Afrika.
+
+## Section 1
+Neugara-neugara nyang rôh lam kawasan Afrika Barat nakeuh:
+
+## Section 2
+Benin
+
+## Section 3
+Burkina Faso
+
+## Section 4
+Gambia
+
+## Section 5
+Ghana
+
+## Section 6
+Guinea
+
+## Section 7
+Guinea Bissau
+
+## Section 8
+Liberia
+
+## Section 9
+Mali
+
+## Section 10
+Niger
+
+## Section 11
+Nigeria
+
+## Section 12
+Panté Gadéng
+
+## Section 13
+Senegal
+
+## Section 14
+Sierra Leone
+
+## Section 15
+Togo
+

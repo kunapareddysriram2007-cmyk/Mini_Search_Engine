@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-02-18
+category: algorithms
+language: English
+title: Graph Algorithms and Traversal
+overview: Graph algorithms solve connectivity, traversal, shortest path, and network flow problems on vertices and edges.
+
+## Breadth-First and Depth-First Search
+Breadth-First Search (BFS) uses a FIFO queue to explore graph levels in O(V + E) time, finding unweighted shortest paths. Depth-First Search (DFS) uses recursion or a stack to discover connected components, topological sorting, and cycle detection.
+
+## Shortest Path and Spanning Tree
+Dijkstra shortest path algorithm computes single-source shortest paths on non-negative weighted graphs using a priority queue in O((V + E) log V). Kruskal and Prim algorithms construct minimum spanning trees (MST).

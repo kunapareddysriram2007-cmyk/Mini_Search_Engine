@@ -1,0 +1,10 @@
+type: Article
+date: 2024-01-05
+title: Virtual Memory and Paging
+overview: Virtual memory is a feature of an operating system that enables a computer to compensate for shortages of physical memory.
+
+## Page Fault Handling
+When a referenced page is not in physical RAM, a page fault occurs. The operating system traps to the kernel, fetches the requested page from secondary storage, and updates the page table.
+
+## Page Replacement Algorithms
+When physical memory is exhausted, page replacement algorithms like Least Recently Used (LRU) or Optimal Page Replacement decide which page to swap out to disk.

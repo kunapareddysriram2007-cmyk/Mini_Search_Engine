@@ -1,0 +1,10 @@
+type: Article
+date: 2024-03-01
+title: Binary Search Tree
+overview: A Binary Search Tree (BST) is a node-based binary tree data structure where each node's left subtree contains keys smaller than the node, and the right subtree contains keys larger.
+
+## Tree Operations
+In-order traversal visits nodes in ascending key order. Search, insertion, and deletion operations run in O(h) time where h is the tree height.
+
+## Self-Balancing Trees
+Unbalanced binary search trees can degenerate to O(n) linked lists. Self-balancing trees like AVL and Red-Black trees guarantee O(log n) worst-case height.

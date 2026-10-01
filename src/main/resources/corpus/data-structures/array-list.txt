@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-01-10
+title: Array List Data Structure
+overview: An Array List is a dynamic resizable array implementation providing amortized constant time O(1) random access and append operations.
+
+## Dynamic Resizing Memory Model
+When the internal backing array capacity is exceeded, a new array with double the capacity is allocated and elements are copied.
+
+## Performance Analysis
+Random access by index is O(1), element insertion at end is amortized O(1), while insertions or deletions in the middle require O(n) element shifts.

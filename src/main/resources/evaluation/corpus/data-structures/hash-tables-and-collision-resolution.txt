@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-03-05
+category: data-structures
+language: English
+title: Hash Tables and Collision Resolution Strategies
+overview: Hash tables provide average O(1) key-value insertion, deletion, and lookup operations using hash functions.
+
+## Hashing and Load Factors
+A uniform hash function maps arbitrary keys to bucket indices. The load factor measures the ratio of stored elements to total bucket capacity, triggering table resizing when exceeding thresholds.
+
+## Chaining vs Open Addressing
+Collision resolution methods include separate chaining using linked lists or buckets, and open addressing strategies such as linear probing, quadratic probing, and double hashing.

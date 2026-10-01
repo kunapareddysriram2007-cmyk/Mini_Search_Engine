@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-03-12
+category: databases
+language: English
+title: Database Indexing Techniques and Query Performance
+overview: Database indexing is a data structure technique to quickly locate and access data in a database without scanning every row.
+
+## Index Structures
+Relational databases use clustered and non-clustered B+ tree indexes for range queries and equality lookups. Specialized engines also support hash indexes, GiST spatial indexes, and inverted indexes for full-text search.
+
+## Query Planner and Optimization
+The cost-based database query optimizer analyzes table statistics, index selectivity, and cardinality estimates to choose optimal execution plans between index scans, bitmap index scans, and sequential table scans.

@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-04-02
+title: Inter-Process Communication
+overview: Inter-process communication (IPC) is a mechanism that allows processes to communicate with each other and synchronize their actions.
+
+## Shared Memory vs Message Passing
+Shared memory allows maximum communication throughput via shared memory regions, while message passing avoids concurrency lock contention through explicit operating system messages.
+
+## Pipes and Sockets
+Unix pipes and network sockets provide stream-based IPC mechanisms for local and remote process data exchange.

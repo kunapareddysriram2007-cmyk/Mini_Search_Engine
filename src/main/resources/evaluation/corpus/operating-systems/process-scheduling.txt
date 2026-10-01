@@ -1,0 +1,12 @@
+type: Article
+date: 2024-02-05
+category: operating-systems
+language: English
+title: Process Scheduling Algorithms
+overview: Process scheduling is an essential operating system mechanism that determines which ready process is allocated CPU execution time.
+
+## Preemptive vs Non-Preemptive Scheduling
+CPU scheduling algorithms can be classified into preemptive scheduling and non-preemptive scheduling. In preemptive scheduling, the operating system can interrupt a running process when a higher-priority task arrives or when a time quantum expires.
+
+## Common Scheduling Strategies
+Common process scheduling algorithms include First-Come First-Served (FCFS), Shortest Job First (SJF), Round Robin (RR) with configurable time slices, and Multilevel Feedback Queue (MLFQ) that dynamically adjusts priority based on CPU burst history.

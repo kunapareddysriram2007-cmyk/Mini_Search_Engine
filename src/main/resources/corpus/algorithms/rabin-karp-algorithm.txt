@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-02-28
+title: Rabin-Karp Rolling Hash Matching
+overview: Rabin-Karp uses a rolling hash function to quickly eliminate non-matching text windows before verifying candidate character matches.
+
+## Rolling Hash Computation
+Rabin-Karp computes the hash of the next window in O(1) time by subtracting the leading character and adding the trailing character using modular arithmetic.
+
+## Worst-Case vs Average Case
+Average matching time is O(n + m), while worst-case time is O(n * m) under frequent hash collisions. Hash verification ensures 100% precision.

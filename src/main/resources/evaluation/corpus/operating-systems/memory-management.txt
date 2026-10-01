@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-02-10
+category: operating-systems
+language: English
+title: Memory Management and Virtual Memory
+overview: Memory management in operating systems provides abstraction over physical RAM through paging, segmentation, and virtual memory.
+
+## Virtual Address Spaces and Paging
+The operating system divides virtual memory into fixed-size chunks called pages, mapped to physical memory page frames via page tables and the Memory Management Unit (MMU). The Translation Lookaside Buffer (TLB) caches recent virtual-to-physical address translations.
+
+## Page Replacement Algorithms
+When memory overcommit occurs and page faults happen, page replacement algorithms such as Least Recently Used (LRU), First-In First-Out (FIFO), and the Clock algorithm select candidate pages to evict to secondary swap storage.

@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-05-08
+category: science
+language: English
+title: Quantum Computing Fundamentals and Qubits
+overview: Quantum computing leverages quantum mechanical phenomena such as superposition and entanglement to perform complex computations.
+
+## Superposition and Entanglement
+A quantum bit (qubit) can exist in a superposition of basis states |0> and |1>. Entanglement creates correlated quantum states across multiple qubits with non-classical properties.
+
+## Quantum Algorithms
+Shor algorithm factors integers in polynomial time on quantum computers, while Grover search algorithm finds entries in an unstructured database with quadratic O(sqrt(N)) speedup.

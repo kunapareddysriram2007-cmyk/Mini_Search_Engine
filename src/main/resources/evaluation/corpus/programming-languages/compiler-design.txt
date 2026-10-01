@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-04-28
+category: programming-languages
+language: English
+title: Compiler Design: Lexing, Parsing and Code Generation
+overview: A compiler translates source code written in a high-level programming language into low-level machine code or bytecode.
+
+## Frontend: Lexical and Syntactic Analysis
+The compiler frontend performs lexical analysis (tokenizing characters into tokens) and parsing to construct an Abstract Syntax Tree (AST) validating grammar rules.
+
+## Backend: Optimization and Machine Code
+Intermediate Representation (IR) allows target-independent optimization (dead code elimination, loop unrolling) before register allocation and target assembly code generation.

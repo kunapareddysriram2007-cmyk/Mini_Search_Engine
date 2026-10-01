@@ -1,0 +1,10 @@
+type: Article
+date: 2024-03-25
+title: Deadlock Detection and Prevention
+overview: Deadlock is a situation in operating systems where a set of processes are blocked because each process is holding a resource and waiting for another resource.
+
+## Coffman Conditions
+Deadlock requires four necessary conditions: mutual exclusion, hold and wait, no preemption, and circular wait.
+
+## Banker's Algorithm
+Dijkstra's Banker's Algorithm tests for safety by simulating resource allocation for predetermined maximum possible resources before approving requests.

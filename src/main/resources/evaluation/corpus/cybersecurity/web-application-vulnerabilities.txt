@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-04-20
+category: cybersecurity
+language: English
+title: Web Application Vulnerabilities and OWASP Defenses
+overview: Web application security focuses on identifying and mitigating security flaws in web servers, APIs, and client applications.
+
+## Injection and Cross-Site Scripting
+SQL injection occurs when unsanitized user inputs manipulate database queries; parameterized queries eliminate SQL injection. Cross-Site Scripting (XSS) executes malicious scripts in user browsers.
+
+## Authentication and Access Control
+Robust web security requires multi-factor authentication (MFA), secure HTTP-only cookies, token-based authentication (JWT), and strict role-based access control (RBAC).

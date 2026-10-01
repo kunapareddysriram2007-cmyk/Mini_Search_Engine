@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-05-05
+category: mathematics
+language: English
+title: Linear Algebra for Computing and Data Science
+overview: Linear algebra is the branch of mathematics concerning vector spaces, linear mappings, and matrix transformations.
+
+## Vectors, Matrices and Dot Products
+Vector dot products compute inner products and geometric angles between multi-dimensional vectors, providing the mathematical basis for TF-IDF cosine similarity calculations in search engines.
+
+## Matrix Factorization and Eigenvalues
+Singular Value Decomposition (SVD) and Principal Component Analysis (PCA) factorize high-dimensional matrices to extract latent semantic structures and compress feature spaces.

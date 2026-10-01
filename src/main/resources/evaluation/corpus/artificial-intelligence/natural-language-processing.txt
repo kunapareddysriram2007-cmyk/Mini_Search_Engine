@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-04-12
+category: artificial-intelligence
+language: English
+title: Natural Language Processing and Language Models
+overview: Natural language processing (NLP) enables computers to understand, interpret, and manipulate human language text.
+
+## Text Representation and Embeddings
+NLP pipelines process raw text through tokenization, stemming, and vectorization. Traditional representations like TF-IDF and Bag-of-Words have evolved into dense vector embeddings (Word2Vec, BERT embeddings).
+
+## Transformer Architectures
+The self-attention mechanism in Transformer architectures processes tokens in parallel, capturing long-range contextual dependencies for translation, summarization, and search relevance.

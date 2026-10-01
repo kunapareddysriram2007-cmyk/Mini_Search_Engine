@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-03-18
+title: Priority Queue and Binary Heap
+overview: A Priority Queue is an abstract data type where elements have priority scores. A Binary Heap implements priority queues using complete binary trees stored in array layout.
+
+## Heap Property
+In a Min-Heap, each parent node key is less than or equal to its children keys. In a Max-Heap, parent keys are greater than or equal to children keys.
+
+## Top-K Selection
+Bounded Priority Queues retain the top K largest or smallest elements during streaming operations in O(n log K) time and O(K) space complexity.

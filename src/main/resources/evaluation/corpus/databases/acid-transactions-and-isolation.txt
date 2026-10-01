@@ -1,0 +1,12 @@
+type: Reference
+date: 2024-03-20
+category: databases
+language: English
+title: ACID Transactions and Concurrency Isolation Levels
+overview: Database transactions guarantee data reliability and correctness across concurrent multi-user database operations.
+
+## ACID Guarantees
+Atomicity ensures all-or-nothing execution; Consistency maintains database invariants; Isolation shields concurrent operations; Durability guarantees committed changes persist across system crashes using Write-Ahead Logging (WAL).
+
+## SQL Isolation Levels
+ANSI SQL defines four transaction isolation levels: Read Uncommitted, Read Committed, Repeatable Read, and Serializable, trading concurrency throughput against phenomena like dirty reads, non-repeatable reads, and phantom reads.

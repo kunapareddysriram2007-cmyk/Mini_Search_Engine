@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-04-15
+category: cybersecurity
+language: English
+title: Network Security and Defense in Depth
+overview: Network security consists of policies, processes, and technical defenses deployed to prevent unauthorized network access and attacks.
+
+## Perimeter and Internal Defenses
+Network security employs next-generation firewalls (NGFW), stateful packet inspection, intrusion detection systems (IDS/IPS), and virtual private networks (VPNs) with IPsec/WireGuard.
+
+## Threat Mitigation and Monitoring
+Security Information and Event Management (SIEM) platforms aggregate network logs to detect port scans, distributed denial of service (DDoS) traffic, and lateral malware movement.

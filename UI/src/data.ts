@@ -187,31 +187,197 @@ export const MOCK_DOCUMENTS: Record<string, DocumentData> = {
       },
     ],
   },
-  "pm-002": {
-    id: "pm-002",
-    title: "Process Management",
-    path: "corpus/computer-science/process-management",
-    size: "8.7 KB",
-    matches: 118,
-    relevance: 87,
+  "mm-003": {
+    id: "mm-003",
+    title: "Memory Management",
+    path: "corpus/computer-science/memory-management",
+    size: "9.2 KB",
+    matches: 96,
+    relevance: 82,
     algorithm: "KMP",
     pattern: "operating system",
     index: "Positional Inverted Index",
-    searchTime: 14,
-    wordCount: 1934,
-    date: "2024-02-03",
+    searchTime: 16,
+    wordCount: 2150,
+    date: "2024-01-28",
     overview:
-      "Process management is an integral part of any modern operating system. It involves creating, scheduling, and terminating processes while managing their resources.",
+      "Memory management is the functionality of an operating system which handles or manages primary memory. It moves processes back and forth between main memory and disk during execution to optimize resource usage across concurrent programs.",
     sections: [
       {
-        heading: "Process States",
+        heading: "Contiguous Allocation & Paging",
         content:
-          "A process can be in one of several states: new, ready, running, waiting, or terminated. The operating system kernel maintains a process control block (PCB) for each process, storing state information, program counter, CPU registers, and memory management information.",
+          "Main memory is divided into fixed or variable size partitions. Modern systems use paging to divide physical memory into fixed-size blocks called frames and logical memory into pages.",
       },
       {
-        heading: "Scheduling Algorithms",
+        heading: "Swapping & Fragmentation",
         content:
-          "The operating system uses various scheduling algorithms including First-Come-First-Served (FCFS), Shortest Job First (SJF), Round Robin, and Priority Scheduling. Each algorithm has different performance characteristics in terms of throughput, turnaround time, and response time.",
+          "Internal and external fragmentation occur when memory is allocated inefficiently. Dynamic relocation using base and limit registers ensures safe memory partitioning between processes.",
+      },
+    ],
+  },
+  "cpu-004": {
+    id: "cpu-004",
+    title: "CPU Scheduling Algorithms",
+    path: "corpus/computer-science/cpu-scheduling",
+    size: "7.1 KB",
+    matches: 74,
+    relevance: 76,
+    algorithm: "KMP",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 12,
+    wordCount: 1680,
+    date: "2024-03-10",
+    overview:
+      "CPU scheduling is a process that allows one process to use the CPU while another process is on hold due to unavailability of resources like I/O. The operating system scheduler determines the order in which processes execute.",
+    sections: [
+      {
+        heading: "Preemptive vs Non-Preemptive",
+        content:
+          "Preemptive scheduling allows the OS to interrupt a running task, whereas non-preemptive scheduling forces tasks to run until completion or voluntary yield.",
+      },
+      {
+        heading: "Multi-level Queue Scheduling",
+        content:
+          "Processes are classified into distinct priority groups. Each queue maintains its own scheduling strategy such as Round Robin or Shortest Remaining Time First.",
+      },
+    ],
+  },
+  "fs-005": {
+    id: "fs-005",
+    title: "File Systems and Storage",
+    path: "corpus/computer-science/file-systems",
+    size: "11.3 KB",
+    matches: 68,
+    relevance: 72,
+    algorithm: "KMP",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 21,
+    wordCount: 2410,
+    date: "2024-02-19",
+    overview:
+      "A file system is a method and data structure that the operating system uses to control how data is stored and retrieved. Without a file system, stored data would be one large body of unaddressable information.",
+    sections: [
+      {
+        heading: "Directory Structure & Inodes",
+        content:
+          "File systems organize files using hierarchical tree structures. Unix-like file systems use inodes to store file metadata including permissions, ownership, and pointer locations.",
+      },
+    ],
+  },
+  "vm-006": {
+    id: "vm-006",
+    title: "Virtual Memory and Paging",
+    path: "corpus/computer-science/virtual-memory",
+    size: "6.8 KB",
+    matches: 61,
+    relevance: 68,
+    algorithm: "Z Algorithm",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 15,
+    wordCount: 1520,
+    date: "2024-01-05",
+    overview:
+      "Virtual memory is a feature of an operating system that enables a computer to compensate for shortages of physical memory by temporarily transferring pages of data from random access memory to disk storage.",
+    sections: [
+      {
+        heading: "Page Fault Handling",
+        content:
+          "When a referenced page is not in RAM, a page fault occurs. The OS traps to the kernel, fetches the requested page from secondary storage, and updates the page table.",
+      },
+    ],
+  },
+  "ipc-007": {
+    id: "ipc-007",
+    title: "Inter-Process Communication",
+    path: "corpus/computer-science/ipc",
+    size: "5.4 KB",
+    matches: 55,
+    relevance: 65,
+    algorithm: "Z Algorithm",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 11,
+    wordCount: 1290,
+    date: "2024-04-02",
+    overview:
+      "Inter-process communication (IPC) is a mechanism that allows processes to communicate with each other and synchronize their actions. The operating system provides several IPC mechanisms including shared memory, message passing, and pipes.",
+    sections: [
+      {
+        heading: "Shared Memory vs Message Passing",
+        content:
+          "Shared memory allows maximum communication throughput via shared regions, while message passing avoids concurrency lock contention through explicit OS messages.",
+      },
+    ],
+  },
+  "dl-008": {
+    id: "dl-008",
+    title: "Deadlock Detection and Prevention",
+    path: "corpus/computer-science/deadlock",
+    size: "7.9 KB",
+    matches: 48,
+    relevance: 61,
+    algorithm: "KMP",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 17,
+    wordCount: 1780,
+    date: "2024-03-25",
+    overview:
+      "Deadlock is a situation in operating systems where a set of processes are blocked because each process is holding a resource and waiting for another resource acquired by another process.",
+    sections: [
+      {
+        heading: "Coffman Conditions & Banker's Algorithm",
+        content:
+          "Deadlock requires mutual exclusion, hold and wait, no preemption, and circular wait. Dijkstra's Banker's Algorithm tests for safety before resource allocation.",
+      },
+    ],
+  },
+  "sc-009": {
+    id: "sc-009",
+    title: "System Calls and APIs",
+    path: "corpus/computer-science/system-calls",
+    size: "4.2 KB",
+    matches: 43,
+    relevance: 58,
+    algorithm: "Z Algorithm",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 9,
+    wordCount: 980,
+    date: "2024-02-14",
+    overview:
+      "A system call is the programmatic way in which a computer program requests a service from the kernel of the operating system. System calls provide an essential interface between a process and the operating system kernel.",
+    sections: [
+      {
+        heading: "User Mode to Kernel Mode Transition",
+        content:
+          "When a process invokes a system call, software interrupts or CPU trap instructions switch execution privileges from user ring to kernel ring mode.",
+      },
+    ],
+  },
+  "boot-010": {
+    id: "boot-010",
+    title: "Boot Process and Initialization",
+    path: "corpus/computer-science/boot-process",
+    size: "3.6 KB",
+    matches: 37,
+    relevance: 54,
+    algorithm: "KMP",
+    pattern: "operating system",
+    index: "Positional Inverted Index",
+    searchTime: 8,
+    wordCount: 840,
+    date: "2024-05-01",
+    overview:
+      "The boot process is what happens from the time you press the power button to the time the operating system is loaded and ready to use. The BIOS or UEFI firmware initializes hardware before passing control to the bootloader.",
+    sections: [
+      {
+        heading: "Bootloader & Kernel Loading",
+        content:
+          "The Master Boot Record (MBR) or EFI system partition executes GRUB or systemd-boot, loading the operating system kernel and initramfs image into memory.",
       },
     ],
   },

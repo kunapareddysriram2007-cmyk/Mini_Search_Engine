@@ -1,0 +1,9 @@
+type: Wikipedia
+date: 2024-05-20
+category: science
+language: English
+title: Oceanographic Currents and Marine Ecosystems
+overview: Oceanography studies marine ecosystems, thermo-haline ocean currents, and deep-sea benthic biodiversity.
+
+## Thermo-Haline Circulation
+Global thermo-haline ocean circulation is driven by density gradients created by surface heat and freshwater fluxes, regulating global climatic temperatures and transporting nutrients across marine biomes.

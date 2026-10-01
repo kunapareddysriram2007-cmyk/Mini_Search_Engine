@@ -1,0 +1,82 @@
+# Corpus manifest file for Mini Search Engine (English CS/DSA & Multilingual Wikipedia datasets)
+
+# Computer Science Core
+computer-science/operating-system.txt
+computer-science/process-management.txt
+computer-science/cpu-scheduling.txt
+computer-science/memory-management.txt
+computer-science/virtual-memory.txt
+computer-science/deadlock-handling.txt
+computer-science/file-systems.txt
+computer-science/inter-process-communication.txt
+
+# Data Structures
+data-structures/array-list.txt
+data-structures/hash-map.txt
+data-structures/binary-search-tree.txt
+data-structures/priority-queue-heap.txt
+data-structures/trie-data-structure.txt
+data-structures/graph-representation.txt
+data-structures/inverted-index.txt
+data-structures/suffix-array.txt
+
+# Algorithms
+algorithms/kmp-string-matching.txt
+algorithms/z-algorithm.txt
+algorithms/aho-corasick-automaton.txt
+algorithms/rabin-karp-algorithm.txt
+algorithms/levenshtein-edit-distance.txt
+algorithms/quicksort-and-mergesort.txt
+algorithms/breadth-first-search.txt
+algorithms/dijkstra-shortest-path.txt
+
+# Multilingual Corpus - Abkhazian
+abkhazian/аԥсуа-бызшәа.txt
+abkhazian/аҟәа.txt
+abkhazian/аԥсуа-алфавит.txt
+abkhazian/гагра.txt
+abkhazian/аԥсны-аҳәынҭқарра.txt
+abkhazian/гәдоуҭа.txt
+abkhazian/афон-ҿыц.txt
+abkhazian/очамчыра.txt
+abkhazian/багаԥшь-сергеи-уасил-иԥа.txt
+abkhazian/анқәаб-александр-золотинска-иԥа.txt
+abkhazian/амҷба-гьаргь-алеқсандр-иԥа.txt
+abkhazian/аусумҭақәа.txt
+abkhazian/беигәаа-омар-баирам-иԥа.txt
+abkhazian/мықәба-анзор-кәакә-иԥа.txt
+abkhazian/ингәыштәыла.txt
+
+# Multilingual Corpus - Acehnese
+acehnese/acèh.txt
+acehnese/nabi-adam.txt
+acehnese/adat-acèh.txt
+acehnese/afghanistan.txt
+acehnese/afrika.txt
+acehnese/afrika-barat.txt
+acehnese/afrika-blah-tunong.txt
+acehnese/afrika-teungoh.txt
+acehnese/afrika-timu.txt
+acehnese/afrika-barôh.txt
+acehnese/agama.txt
+acehnese/ahlussunah-wal-jamaah.txt
+acehnese/akhirat.txt
+acehnese/allah.txt
+acehnese/almazán.txt
+
+# Multilingual Corpus - Adyghe
+adyghe/nba.txt
+adyghe/адыгэ-джэгу.txt
+adyghe/абазэ-къамбот.txt
+adyghe/абадзэбзэ.txt
+adyghe/абдзаххэр.txt
+adyghe/абдзэхабзэ.txt
+adyghe/абхъазыбзэ.txt
+adyghe/аддис-абеба.txt
+adyghe/кӏах-адыгабзэ.txt
+adyghe/адыгъэ-шӏэжь-и-гупч.txt
+adyghe/адыгэ-нып.txt
+adyghe/адыгэ-республикэм-и-гимн.txt
+adyghe/адыгэ-хэку.txt
+adyghe/адыгэ-алфыбэ.txt
+adyghe/адыгэ-интернет-сайтхэр.txt

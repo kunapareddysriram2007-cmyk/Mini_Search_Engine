@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-02-19
+title: File Systems and Storage
+overview: A file system is a method and data structure that the operating system uses to control how data is stored and retrieved.
+
+## Directory Structure and Inodes
+File systems organize files using hierarchical tree structures. Unix-like file systems use inodes to store file metadata including permissions, ownership, and pointer locations.
+
+## File Allocation Methods
+Contiguous, linked, and indexed allocation represent the primary strategies for laying out file blocks on physical disk storage media.

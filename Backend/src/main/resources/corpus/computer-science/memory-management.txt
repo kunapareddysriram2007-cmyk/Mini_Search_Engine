@@ -1,0 +1,10 @@
+type: Article
+date: 2024-01-28
+title: Memory Management
+overview: Memory management is the functionality of an operating system which handles or manages primary memory. It moves processes back and forth between main memory and disk during execution.
+
+## Contiguous Allocation and Paging
+Main memory is divided into fixed or variable size partitions. Modern operating systems use paging to divide physical memory into fixed-size blocks called frames and logical memory into pages.
+
+## Swapping and Fragmentation
+Internal and external fragmentation occur when memory is allocated inefficiently. Dynamic relocation using base and limit registers ensures safe memory partitioning between processes.

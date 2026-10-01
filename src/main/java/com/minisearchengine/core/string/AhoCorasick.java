@@ -222,4 +222,7 @@ public class AhoCorasick implements MultiPatternMatcher {
 
         return matches;
     }
+
+    public int getNumNodes() { return numNodes; }
+    public CustomArrayList<String> getPatterns() { return patterns; }
 }

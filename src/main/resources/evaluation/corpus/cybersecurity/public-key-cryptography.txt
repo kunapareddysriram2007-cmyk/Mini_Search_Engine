@@ -1,0 +1,12 @@
+type: Article
+date: 2024-04-18
+category: cybersecurity
+language: English
+title: Public Key Cryptography and Digital Certificates
+overview: Public-key cryptography uses mathematically linked public and private key pairs for secure encryption and identity authentication.
+
+## Asymmetric Algorithms: RSA and ECC
+RSA relies on the computational difficulty of factoring large prime numbers, while Elliptic Curve Cryptography (ECC) provides equivalent cryptographic security with shorter keys.
+
+## Digital Signatures and TLS Handshake
+Digital signatures provide message integrity and non-repudiation. Transport Layer Security (TLS) uses asymmetric encryption during handshakes to securely negotiate symmetric session keys.

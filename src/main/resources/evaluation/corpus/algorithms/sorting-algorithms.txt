@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-02-22
+category: algorithms
+language: English
+title: Comparison and Non-Comparison Sorting Algorithms
+overview: Sorting algorithms arrange collections of elements in sequential order, evaluated by time and space complexity.
+
+## Divide and Conquer Sorts
+Quicksort partitions arrays around a pivot element achieving O(n log n) average time, while Mergesort recursively divides the array into halves and merges sorted sub-arrays with guaranteed O(n log n) worst-case time.
+
+## Linear-Time Non-Comparison Sorts
+Counting Sort and Radix Sort bypass the theoretical O(n log n) comparison lower bound by exploiting integer key distribution to achieve O(n + k) linear running time.

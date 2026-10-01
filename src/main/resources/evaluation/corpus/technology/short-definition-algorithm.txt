@@ -1,0 +1,9 @@
+type: Reference
+date: 2024-05-12
+category: algorithms
+language: English
+title: Algorithm Definition
+overview: An algorithm is a finite sequence of rigorous mathematical instructions used to solve a specific class of problems or perform computation.
+
+## Summary
+Algorithms operate on structured input data to produce correct output values within bounded computational time and memory space limits.

@@ -1,8 +1,9 @@
+import { useState, useEffect } from "react"
 import Logo from "../components/Logo"
-import { MOCK_DOCUMENTS, MOCK_RESULTS } from "../data"
 import { highlightTerms, formatDate } from "../utils"
-import type { Screen } from "../types"
+import type { Screen, DocumentData } from "../types"
 import { ArrowLeftIcon, ClockIcon, DocumentIcon } from "../icons"
+import { fetchDocumentById } from "../api"
 
 type Props = {
   query: string
@@ -30,15 +31,50 @@ function AnalysisRow({ label, value, mono = false }: { label: string; value: str
 }
 
 export default function DocumentDetails({ query, resultId, onBack, onNavigate }: Props) {
-  const doc = MOCK_DOCUMENTS[resultId]
-  const result = MOCK_RESULTS.find((r) => r.id === resultId)
+  const [docData, setDocData] = useState<DocumentData | null>(null)
+  const [loading, setLoading] = useState<boolean>(true)
 
-  if (!doc && !result) {
+  useEffect(() => {
+    let cancelled = false
+    setLoading(true)
+    fetchDocumentById(resultId, { query }).then((data) => {
+      if (!cancelled) {
+        setDocData(data)
+        setLoading(false)
+      }
+    })
+    return () => {
+      cancelled = true
+    }
+  }, [resultId, query])
+
+  const doc = docData
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-page-bg flex flex-col">
+        <header className="bg-white border-b border-slate-200 h-16 flex items-center px-6">
+          <Logo onClick={() => onNavigate("home")} />
+        </header>
+        <div className="flex-1 max-w-screen-xl mx-auto w-full px-6 py-12">
+          <div className="animate-pulse space-y-6">
+            <div className="h-4 bg-slate-200 rounded w-48" />
+            <div className="h-10 bg-slate-200 rounded w-96" />
+            <div className="h-20 bg-white border border-slate-200 rounded-xl" />
+            <div className="h-64 bg-white border border-slate-200 rounded-xl" />
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  if (!doc) {
     return (
       <div className="min-h-screen bg-page-bg flex items-center justify-center">
-        <div className="text-center">
-          <p className="text-slate-500 mb-4">Document not found.</p>
-          <button onClick={onBack} className="px-4 py-2 bg-navy text-white rounded-lg text-sm">
+        <div className="text-center bg-white p-8 rounded-2xl border border-slate-200 shadow-sm max-w-md">
+          <p className="text-slate-700 font-medium mb-2">Document not found</p>
+          <p className="text-slate-400 text-xs mb-6">The document "{resultId}" could not be retrieved from the backend corpus.</p>
+          <button onClick={onBack} className="px-5 py-2.5 bg-navy hover:bg-navy-mid text-white rounded-xl text-sm font-medium transition-colors cursor-pointer">
             Back to results
           </button>
         </div>
@@ -46,19 +82,19 @@ export default function DocumentDetails({ query, resultId, onBack, onNavigate }:
     )
   }
 
-  const title = doc?.title ?? result?.title ?? "Document"
-  const path = doc?.path ?? result?.path ?? ""
-  const size = doc?.size ?? result?.size ?? "—"
-  const matches = doc?.matches ?? result?.matches ?? 0
-  const relevance = doc?.relevance ?? result?.relevance ?? 0
-  const algorithm = doc?.algorithm ?? result?.algorithm ?? "KMP"
-  const searchTime = doc?.searchTime ?? 18
-  const index = doc?.index ?? "Positional Inverted Index"
-  const pattern = doc?.pattern ?? query
-  const wordCount = doc?.wordCount ?? 0
-  const date = doc?.date ?? result?.date ?? ""
-  const overview = doc?.overview ?? result?.snippet ?? ""
-  const sections = doc?.sections ?? []
+  const title = doc.title || "Document"
+  const path = doc.path || ""
+  const size = doc.size || "—"
+  const matches = doc.matches ?? 0
+  const relevance = doc.relevance ?? 0
+  const algorithm = doc.algorithm ?? "Inverted Index"
+  const searchTime = doc.searchTime ?? 12
+  const index = doc.index ?? "Positional Inverted Index"
+  const pattern = doc.pattern ?? query
+  const wordCount = doc.wordCount ?? 0
+  const date = doc.date ?? ""
+  const overview = doc.overview ?? ""
+  const sections = doc.sections ?? []
 
   return (
     <div className="min-h-screen flex flex-col bg-page-bg">
@@ -121,6 +157,53 @@ export default function DocumentDetails({ query, resultId, onBack, onNavigate }:
               <p className="text-sm text-slate-700 leading-relaxed">
                 {highlightTerms(overview, query)}
               </p>
+              {doc?.keywords && doc.keywords.length > 0 && (
+                <div className="flex flex-wrap gap-1.5 mt-4 pt-3 border-t border-slate-100">
+                  <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 mr-1 self-center">
+                    Keywords:
+                  </span>
+                  {doc.keywords.map((k) => (
+                    <span key={k} className="px-2.5 py-0.5 bg-slate-100 text-slate-700 rounded-md text-xs font-mono">
+                      {k}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </section>
+
+            {/* Citations & Document Relationships */}
+            <section className="bg-white border border-slate-200 rounded-xl p-6">
+              <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">
+                Citations & Document Relationships
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className="p-4 bg-slate-50 border border-slate-200/80 rounded-xl">
+                  <span className="text-xs font-semibold text-slate-800 uppercase tracking-wider block mb-2.5">
+                    Referenced Topics (Outgoing)
+                  </span>
+                  <ul className="space-y-2 text-xs text-slate-600">
+                    {(doc?.references || ["Process Management", "Memory Management", "File Systems"]).map((ref) => (
+                      <li key={ref} className="flex items-center gap-2">
+                        <span className="text-accent font-bold text-sm">→</span>
+                        <span className="font-medium text-slate-800">{ref}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="p-4 bg-slate-50 border border-slate-200/80 rounded-xl">
+                  <span className="text-xs font-semibold text-slate-800 uppercase tracking-wider block mb-2.5">
+                    Cited By / Related Contexts (Incoming)
+                  </span>
+                  <ul className="space-y-2 text-xs text-slate-600">
+                    {(doc?.citedBy || ["Virtual Memory and Paging", "CPU Scheduling"]).map((cite) => (
+                      <li key={cite} className="flex items-center gap-2">
+                        <span className="text-emerald-500 font-bold text-sm">←</span>
+                        <span className="font-medium text-slate-800">{cite}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </section>
 
             {/* Matched content sections */}
@@ -145,7 +228,7 @@ export default function DocumentDetails({ query, resultId, onBack, onNavigate }:
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">Matched Content</h2>
                 <blockquote className="border-l-4 border-accent pl-4 py-1">
                   <p className="text-sm text-slate-700 leading-relaxed italic">
-                    {highlightTerms(result?.snippet ?? overview, query)}
+                    {highlightTerms(overview, query)}
                   </p>
                 </blockquote>
                 <p className="text-xs text-slate-400 mt-4 font-mono">

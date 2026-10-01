@@ -1,0 +1,10 @@
+type: Article
+date: 2024-02-03
+title: Process Management
+overview: Process management is an integral part of any modern operating system. It involves creating, scheduling, and terminating processes while managing their resources.
+
+## Process States
+A process can be in one of several states: new, ready, running, waiting, or terminated. The operating system kernel maintains a process control block (PCB) for each process, storing state information, program counter, CPU registers, and memory management information.
+
+## Scheduling Algorithms
+The operating system uses various scheduling algorithms including First-Come-First-Served (FCFS), Shortest Job First (SJF), Round Robin, and Priority Scheduling. Each algorithm has different performance characteristics in terms of throughput, turnaround time, and response time.

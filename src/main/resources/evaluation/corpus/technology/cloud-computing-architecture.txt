@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-05-10
+category: technology
+language: English
+title: Cloud Computing Architecture and Distributed Systems
+overview: Cloud computing delivers on-demand computing services over the internet with elastic scaling and resource pooling.
+
+## Service and Deployment Models
+Cloud architectures provide Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) deployed across public, private, and hybrid clouds.
+
+## Distributed Consensus and Microservices
+Microservice architectures decompose applications into independently deployable services coordinating via asynchronous messaging and distributed consensus protocols (Raft, Paxos).

@@ -1,0 +1,10 @@
+type: Article
+date: 2024-02-22
+title: Trie Data Structure
+overview: A Trie (prefix tree) is a tree-like data structure used to locate specific keys within a set, where node positions represent prefix character paths.
+
+## Prefix Search
+Tries allow prefix search queries in O(L) time where L is key length, independent of total dataset size.
+
+## Multi-Pattern Matching
+Aho-Corasick extends standard tries with failure transition links, enabling simultaneous matching of thousands of dictionary patterns over streaming text.

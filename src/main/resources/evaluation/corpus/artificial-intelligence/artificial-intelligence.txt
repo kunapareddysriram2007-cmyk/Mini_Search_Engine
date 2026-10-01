@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-04-08
+category: artificial-intelligence
+language: English
+title: Artificial Intelligence and Intelligent Agents
+overview: Artificial intelligence (AI) is the science and engineering of making intelligent machines and software capable of reasoning.
+
+## History and Evolution
+Artificial intelligence evolved from symbolic reasoning and expert systems in the 1950s to statistical machine learning and modern deep artificial neural networks capable of complex perception.
+
+## Subfields of AI
+Major branches of artificial intelligence include Natural Language Processing (NLP), Computer Vision, Robotics, Automated Theorem Proving, and Reinforcement Learning.

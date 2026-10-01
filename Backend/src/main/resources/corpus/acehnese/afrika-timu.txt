@@ -1,0 +1,53 @@
+type: Wikipedia
+date: 2023-11-01
+title: Afrika Timu
+overview: Neugara-neugara nyang rôh lam kawasan Afrika Timu nakeuh:
+
+## Overview
+Neugara-neugara nyang rôh lam kawasan Afrika Timu nakeuh:
+
+## Section 1
+Djibouti
+
+## Section 2
+Eritrea
+
+## Section 3
+Ethiopia
+
+## Section 4
+Kenya
+
+## Section 5
+Somalia
+
+## Section 6
+Tanzania
+
+## Section 7
+Uganda
+
+## Section 8
+Meujan geupeurôh cit lam kawasan Afrika Timu.
+
+## Section 9
+Burundi
+
+## Section 10
+Rwanda
+
+## Section 11
+Madagaskar
+
+## Section 12
+Malawi
+
+## Section 13
+Mozambik
+
+## Section 14
+Sudan
+
+## Section 15
+Wilayah Somalia, Djibouti, Ethiopia ngon Eritrea, ban mandum nyang geubôh nan Lungkè Afrika lagèë bangonjih droë.
+

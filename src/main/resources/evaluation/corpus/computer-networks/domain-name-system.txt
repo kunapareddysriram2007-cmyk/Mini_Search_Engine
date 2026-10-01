@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-03-28
+category: computer-networks
+language: English
+title: Domain Name System Architecture and Resolution
+overview: The Domain Name System (DNS) translates human-readable domain names into numerical IP addresses for network routing.
+
+## Hierarchical Namespace
+DNS is structured hierarchically into root zone servers (13 named root authorities), Top-Level Domain (TLD) servers (.com, .org), authoritative name servers, and recursive resolvers.
+
+## Record Types and Caching
+Common DNS record types include A (IPv4), AAAA (IPv6), CNAME (canonical alias), MX (mail exchange), and TXT. Recursive resolvers cache query answers based on Time-To-Live (TTL) values.

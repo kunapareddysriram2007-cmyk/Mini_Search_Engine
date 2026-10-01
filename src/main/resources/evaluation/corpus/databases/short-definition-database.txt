@@ -1,0 +1,9 @@
+type: Reference
+date: 2024-05-14
+category: databases
+language: English
+title: Database Definition
+overview: A database is an organized collection of structured data stored electronically in a computer storage system.
+
+## Overview
+Databases are controlled by database management systems providing data querying, transaction concurrency, indexing, and storage durability.

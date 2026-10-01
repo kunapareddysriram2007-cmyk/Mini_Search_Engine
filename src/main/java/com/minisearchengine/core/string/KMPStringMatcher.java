@@ -47,42 +47,48 @@ import com.minisearchengine.core.ds.CustomArrayList;
  *
  * Constraints:
  * - Zero java.util.* imports.
- * - Zero String.indexOf() or regex.
  */
 public class KMPStringMatcher implements StringMatcher {
 
+    public static final class KmpSearchResult {
+        private final CustomArrayList<Integer> matches;
+        private final long comparisons;
+
+        public KmpSearchResult(CustomArrayList<Integer> matches, long comparisons) {
+            this.matches = (matches == null) ? new CustomArrayList<>() : matches;
+            this.comparisons = comparisons;
+        }
+
+        public CustomArrayList<Integer> getMatches() { return matches; }
+        public long getComparisons() { return comparisons; }
+    }
+
     /**
-     * Searches for all occurrences of pattern in text using the KMP algorithm.
-     *
-     * Step 1: Build the LPS array from the pattern (O(m)).
-     * Step 2: Slide through the text using the LPS array to skip redundant
-     *         comparisons (O(n)).
-     *
-     * @param text    The source text.
-     * @param pattern The pattern to find.
-     * @return CustomArrayList<Integer> of 0-based start indices of all matches.
+     * Searches for all occurrences of pattern in text using the KMP algorithm
+     * while tracking the exact number of character comparisons.
      */
-    @Override
-    public CustomArrayList<Integer> search(String text, String pattern) {
+    public KmpSearchResult searchWithStats(String text, String pattern) {
         CustomArrayList<Integer> matches = new CustomArrayList<>();
 
         if (text == null || pattern == null) {
-            return matches;
+            return new KmpSearchResult(matches, 0);
         }
 
         int n = text.length();
         int m = pattern.length();
 
         if (m == 0 || m > n) {
-            return matches;
+            return new KmpSearchResult(matches, 0);
         }
 
         int[] lps = buildLPS(pattern);
 
         int i = 0; // index for text
         int j = 0; // index for pattern
+        long comparisons = 0;
 
         while (i < n) {
+            comparisons++;
             if (text.charAt(i) == pattern.charAt(j)) {
                 i++;
                 j++;
@@ -103,7 +109,12 @@ public class KMPStringMatcher implements StringMatcher {
             }
         }
 
-        return matches;
+        return new KmpSearchResult(matches, comparisons);
+    }
+
+    @Override
+    public CustomArrayList<Integer> search(String text, String pattern) {
+        return searchWithStats(text, pattern).getMatches();
     }
 
     /**

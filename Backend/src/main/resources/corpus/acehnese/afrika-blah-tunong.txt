@@ -1,0 +1,23 @@
+type: Wikipedia
+date: 2023-11-01
+title: Afrika blah tunong
+overview: Afrika Blah Seulatan nakeuh kawasan nyang neuduëkjih paléng seulatan beunua Afrika. Meunurôt PBB, limong boh neugara nyang rôh lam kawasan Afrika blah Seulatan nakeuh:
+
+## Overview
+Afrika Blah Seulatan nakeuh kawasan nyang neuduëkjih paléng seulatan beunua Afrika. Meunurôt PBB, limong boh neugara nyang rôh lam kawasan Afrika blah Seulatan nakeuh:
+
+## Section 1
+Botswana
+
+## Section 2
+Eswatini
+
+## Section 3
+Lesotho
+
+## Section 4
+Namibia
+
+## Section 5
+Afrika Seulatan
+

@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-04-01
+category: machine-learning
+language: English
+title: Machine Learning Algorithms and Model Paradigms
+overview: Machine learning is a field of artificial intelligence that builds mathematical models from sample data to make predictions.
+
+## Core Paradigms
+Machine learning algorithms are categorized into supervised learning (labeled data), unsupervised learning (clustering, dimensionality reduction like PCA), and reinforcement learning (reward maximization in dynamic environments).
+
+## Model Generalization and Evaluation
+Training machine learning models requires balancing bias and variance to prevent overfitting. Common evaluation metrics include Precision, Recall, F1-score, ROC-AUC, and Mean Squared Error (MSE).

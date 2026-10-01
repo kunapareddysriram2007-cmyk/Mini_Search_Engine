@@ -1,0 +1,23 @@
+type: Wikipedia
+date: 2023-11-01
+title: Agama
+overview: Agama nakeuh geucök nibak bahsa Latén, a ngön gama. A areutijih h'an, gama areutijih kacho atawa karu, meunyö meunan agama meukeusudjih hana kacho atawa takheun meuatôran.
+
+## Overview
+Agama nakeuh geucök nibak bahsa Latén, a ngön gama. A areutijih h'an, gama areutijih kacho atawa karu, meunyö meunan agama meukeusudjih hana kacho atawa takheun meuatôran.
+
+## Section 1
+Lam Iseulam, agama nyan ibaratjih tapeusapat 4 peukara nyakni:
+
+## Section 2
+Iman
+
+## Section 3
+Islam
+
+## Section 4
+Tauhid
+
+## Section 5
+Ma'rifah
+

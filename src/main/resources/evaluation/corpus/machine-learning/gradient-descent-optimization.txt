@@ -1,0 +1,12 @@
+type: Article
+date: 2024-04-03
+category: machine-learning
+language: English
+title: Gradient Descent and Optimization in Machine Learning
+overview: Gradient descent is a first-order iterative optimization algorithm for finding a local minimum of a differentiable loss function.
+
+## Mechanics of Gradient Descent
+The algorithm iteratively updates model parameters in the opposite direction of the gradient of the loss function with respect to parameters, scaled by a learning rate hyperparameter.
+
+## Stochastic and Adaptive Variants
+Stochastic Gradient Descent (SGD) computes gradients on random mini-batches. Advanced optimizers like Adam, RMSprop, and AdaGrad adjust learning rates adaptively per parameter.

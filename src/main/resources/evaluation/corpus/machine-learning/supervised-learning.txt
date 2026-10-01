@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-04-05
+category: machine-learning
+language: English
+title: Supervised Learning: Classification and Regression
+overview: Supervised learning algorithms infer mathematical mappings from labeled training input pairs to output target variables.
+
+## Classification Algorithms
+Classification models predict discrete category labels. Key algorithms include Logistic Regression, Support Vector Machines (SVM) with kernel trick, k-Nearest Neighbors (k-NN), and Naive Bayes classifiers.
+
+## Regression Models
+Regression models predict continuous quantities using Ordinary Least Squares (OLS), Ridge regression (L2 regularization), Lasso regression (L1 regularization), and polynomial curve fitting.

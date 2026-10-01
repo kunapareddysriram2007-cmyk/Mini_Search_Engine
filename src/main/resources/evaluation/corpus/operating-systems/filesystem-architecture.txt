@@ -1,0 +1,12 @@
+type: Reference
+date: 2024-02-15
+category: operating-systems
+language: English
+title: File System Architecture and Inodes
+overview: File systems structure persistent data storage across block devices using directory trees, inodes, and journaling.
+
+## Inodes and File Metadata
+Unix-like file systems represent files via index nodes (inodes), which store file metadata including permissions, ownership, timestamps, and direct/indirect block pointers pointing to storage sectors.
+
+## Journaling and Crash Consistency
+Modern file systems like ext4, NTFS, and ZFS employ write-ahead journaling to guarantee crash consistency. Metadata updates are recorded to a sequential journal before committing to storage structures.

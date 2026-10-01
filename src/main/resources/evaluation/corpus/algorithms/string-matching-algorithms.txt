@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-02-25
+category: algorithms
+language: English
+title: String Matching Algorithms: KMP, Aho-Corasick and Rabin-Karp
+overview: String matching algorithms find occurrences of pattern strings within larger text corpora efficiently.
+
+## Knuth-Morris-Pratt and Z-Algorithm
+The KMP string matcher precomputes an LPS failure table in O(m) time to skip redundant comparisons, searching text in linear O(n) time. The Z-algorithm computes a Z-array where each element measures the longest prefix match.
+
+## Aho-Corasick and Rabin-Karp
+Aho-Corasick constructs a trie finite-state automaton with failure links to match multiple patterns simultaneously in O(n + m + z) time. Rabin-Karp uses rolling hash functions for average linear-time substring search.

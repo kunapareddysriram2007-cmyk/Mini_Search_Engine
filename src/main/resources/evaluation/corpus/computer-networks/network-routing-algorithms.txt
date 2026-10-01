@@ -1,0 +1,12 @@
+type: Article
+date: 2024-03-25
+category: computer-networks
+language: English
+title: Network Routing Protocols and Path Algorithms
+overview: Network routing algorithms determine the optimal path for forwarding data packets across autonomous network domains.
+
+## Intra-Domain Routing: OSPF and RIP
+Open Shortest Path First (OSPF) uses link-state advertisements and Dijkstra algorithm to calculate shortest paths. Routing Information Protocol (RIP) uses distance-vector algorithms and Bellman-Ford.
+
+## Inter-Domain Routing with BGP
+Border Gateway Protocol (BGP) is the path-vector routing protocol that manages routing decisions across Autonomous Systems (AS) across the global Internet backbone.

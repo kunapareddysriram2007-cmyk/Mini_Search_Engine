@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-01-20
+title: Inverted Index for Text Retrieval
+overview: An Inverted Index is the core data structure of search engines, mapping each unique token to a posting list of document identifiers and occurrences.
+
+## Posting Lists
+Posting lists contain document IDs containing the term alongside term frequencies. Positional inverted indexes store exact token offset arrays for phrase searching.
+
+## Space Optimization
+Delta encoding and variable-byte integer compression minimize the memory footprint of postings lists in large-scale search engine indexes.

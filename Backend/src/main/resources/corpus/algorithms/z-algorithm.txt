@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-02-08
+title: Z Algorithm for String Matching
+overview: The Z Algorithm constructs a Z-array where each entry Z[i] is the length of the longest substring starting at position i matching a prefix.
+
+## Z-Box Optimization
+Maintaining a rightmost matching boundary segment [L, R] allows the algorithm to reuse previous Z-values and run in linear O(n + m) time.
+
+## Pattern Matching Application
+By concatenating pattern, delimiter, and text (P + $ + T), pattern occurrences are identified wherever Z[i] equals pattern length m.

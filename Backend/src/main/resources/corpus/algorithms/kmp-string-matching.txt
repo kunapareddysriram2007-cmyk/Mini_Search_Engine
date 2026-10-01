@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-01-12
+title: KMP String Matching Algorithm
+overview: Knuth-Morris-Pratt (KMP) searches for occurrences of a pattern within a main text by preprocessing pattern prefixes in linear time.
+
+## Longest Prefix Suffix (LPS) Table
+The LPS table stores the length of the longest proper prefix that is also a suffix for each pattern prefix, eliminating redundant character comparisons.
+
+## Time Complexity Analysis
+KMP preprocessing runs in O(m) time and text matching runs in O(n) time, resulting in guaranteed linear O(n + m) time complexity.

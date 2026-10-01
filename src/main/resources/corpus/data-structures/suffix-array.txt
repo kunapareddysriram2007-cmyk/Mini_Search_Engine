@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-04-10
+title: Suffix Array and Kasai LCP
+overview: A Suffix Array is a lexicographically sorted array of all suffixes of a string, providing space-efficient full-text indexing.
+
+## Prefix Doubling Construction
+Prefix doubling constructs suffix arrays in O(n log^2 n) or O(n log n) time by sorting suffix prefixes of length 2^k at step k.
+
+## Longest Common Prefix (LCP) Array
+Kasai's algorithm constructs the LCP array in linear O(n) time, enabling fast substring search and pattern occurrence counting via binary search.

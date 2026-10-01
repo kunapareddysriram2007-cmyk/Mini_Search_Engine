@@ -1,0 +1,10 @@
+type: Article
+date: 2024-03-29
+title: Graph Representation and Traversal
+overview: Graphs consist of vertices connected by edges. Common graph representations include adjacency matrices and adjacency lists.
+
+## Adjacency List vs Matrix
+Adjacency lists require O(V + E) memory space and are optimal for sparse graphs, while adjacency matrices require O(V^2) memory and allow O(1) edge lookup.
+
+## Traversal Algorithms
+Breadth-First Search (BFS) uses FIFO queues to find shortest unweighted paths. Depth-First Search (DFS) uses stacks or recursion for connectivity checking.

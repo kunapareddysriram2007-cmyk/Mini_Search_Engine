@@ -1,0 +1,12 @@
+type: Reference
+date: 2024-03-08
+category: data-structures
+language: English
+title: Heaps and Priority Queue Implementations
+overview: A heap is a specialized tree-based data structure that satisfies the heap property, powering priority queues.
+
+## Binary Heap Properties
+In a min-heap, every parent node is less than or equal to its children, placing the minimum element at the root. Binary heaps are compactly represented inside contiguous arrays.
+
+## Operations and Applications
+Insertion and extract-min operate in O(log n) time, while heap building takes O(n). Priority queues built on heaps power CPU scheduling, Dijkstra shortest path, and Huffman coding.

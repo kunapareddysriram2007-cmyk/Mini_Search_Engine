@@ -1,14 +1,16 @@
+import { useState, useEffect } from "react"
 import Logo from "../components/Logo"
 import SearchBar from "../components/SearchBar"
 import { ALGORITHMS, PIPELINE_STEPS } from "../data"
 import type { Screen } from "../types"
+import { fetchAlgorithms, fetchStatistics, type AlgorithmInfo } from "../api"
 
 type Props = {
   onSearch: (query: string) => void
   onNavigate: (screen: Screen) => void
 }
 
-function AlgorithmCard({ algo }: { algo: (typeof ALGORITHMS)[0] }) {
+function AlgorithmCard({ algo }: { algo: AlgorithmInfo }) {
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-5 hover:border-slate-300 hover:shadow-sm transition-all duration-150 group">
       <div className="flex items-start justify-between mb-3 gap-2">
@@ -51,14 +53,39 @@ function PipelineStep({ step }: { step: (typeof PIPELINE_STEPS)[0] }) {
   )
 }
 
-const systemStats = [
-  { label: "Total Documents", value: "10,248", sub: "academic corpus" },
-  { label: "Index Size", value: "284 MB", sub: "positional inverted index" },
-  { label: "Unique Terms", value: "847K", sub: "after stemming" },
-  { label: "Avg. Tokens/Doc", value: "312", sub: "post-normalization" },
-]
-
 export default function TechnicalPage({ onSearch, onNavigate }: Props) {
+  const [algorithmsList, setAlgorithmsList] = useState<AlgorithmInfo[]>(ALGORITHMS)
+  const [statsData, setStatsData] = useState({
+    totalDocs: "45",
+    totalTokens: "128K",
+    uniqueTerms: "8,471",
+    avgTokens: "2,853",
+  })
+
+  useEffect(() => {
+    fetchAlgorithms().then((algos) => {
+      if (algos && algos.length > 0) {
+        setAlgorithmsList(algos)
+      }
+    })
+
+    fetchStatistics().then((s) => {
+      setStatsData({
+        totalDocs: s.totalDocuments.toLocaleString(),
+        totalTokens: `${Math.round(s.totalTokens / 1000)}K`,
+        uniqueTerms: s.uniqueTerms.toLocaleString(),
+        avgTokens: s.avgTokensPerDoc.toLocaleString(),
+      })
+    })
+  }, [])
+
+  const systemStats = [
+    { label: "Total Documents", value: statsData.totalDocs, sub: "corpus files" },
+    { label: "Total Tokens", value: statsData.totalTokens, sub: "tokenized stream" },
+    { label: "Unique Terms", value: statsData.uniqueTerms, sub: "vocabulary size" },
+    { label: "Avg. Tokens/Doc", value: statsData.avgTokens, sub: "post-normalization" },
+  ]
+
   return (
     <div className="min-h-screen flex flex-col bg-page-bg">
       {/* Header */}
@@ -125,7 +152,7 @@ export default function TechnicalPage({ onSearch, onNavigate }: Props) {
               Implemented Algorithms
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
-              {ALGORITHMS.map((algo) => (
+              {algorithmsList.map((algo) => (
                 <AlgorithmCard key={algo.id} algo={algo} />
               ))}
             </div>

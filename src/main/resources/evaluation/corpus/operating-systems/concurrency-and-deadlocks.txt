@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-02-12
+category: operating-systems
+language: English
+title: Concurrency, Synchronization and Deadlock Handling
+overview: Concurrent processes sharing resources require synchronization primitives to prevent race conditions and deadlock states.
+
+## Synchronization Primitives
+Mutexes, binary semaphores, counting semaphores, and condition variables coordinate thread execution across critical sections, ensuring mutual exclusion without race conditions.
+
+## The Four Coffman Deadlock Conditions
+A deadlock occurs when processes are permanently blocked because each holds resources while waiting for resources held by others. The four necessary conditions are Mutual Exclusion, Hold and Wait, No Preemption, and Circular Wait. The Bankers algorithm prevents deadlocks by evaluating safe states.

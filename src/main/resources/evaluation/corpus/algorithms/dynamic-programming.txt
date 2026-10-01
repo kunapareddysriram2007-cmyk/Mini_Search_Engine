@@ -1,0 +1,12 @@
+type: Article
+date: 2024-02-20
+category: algorithms
+language: English
+title: Dynamic Programming Principles and Patterns
+overview: Dynamic programming solves complex optimization problems by breaking them down into overlapping subproblems with optimal substructure.
+
+## Memoization vs Tabulation
+Top-down dynamic programming employs recursive memoization to cache intermediate results, while bottom-up tabulation iteratively fills a DP state table to eliminate call stack overhead.
+
+## Classic DP Problems
+Canonical dynamic programming problems include the 0/1 Knapsack problem, Longest Common Subsequence (LCS), Levenshtein edit distance, Matrix Chain Multiplication, and Floyd-Warshall all-pairs shortest paths.

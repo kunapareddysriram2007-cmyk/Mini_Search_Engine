@@ -1,0 +1,10 @@
+type: Article
+date: 2024-03-05
+title: Quicksort and Merge Sort Algorithms
+overview: Quicksort and Merge Sort are divide-and-conquer comparison sorting algorithms providing O(n log n) performance.
+
+## Quicksort Pivot Selection
+Quicksort partitions elements around a pivot. Randomized pivot selection or median-of-three yields expected O(n log n) time and in-place sorting.
+
+## Merge Sort Stability
+Merge Sort divides arrays into halves and merges sorted sub-arrays. It guarantees stable O(n log n) worst-case time, essential for score tie-breaking.

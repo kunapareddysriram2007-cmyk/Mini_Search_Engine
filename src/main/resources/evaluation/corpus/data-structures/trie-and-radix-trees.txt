@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-03-10
+category: data-structures
+language: English
+title: Trie and Radix Tree Prefix Structures
+overview: A trie is an ordered tree data structure used to store associative arrays where keys are usually sequences such as strings.
+
+## Prefix Matching and Autocomplete
+Tries store shared prefixes along common branches, allowing prefix searching, autocomplete, and dictionary validation in O(L) time where L is string length, independent of total dictionary size.
+
+## Radix Tree Compaction
+A Radix tree (compact trie) compresses single-child node chains into single edges containing multi-character strings, reducing memory footprint while maintaining fast lookups.

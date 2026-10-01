@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-02-01
+category: operating-systems
+language: English
+title: Operating System Architecture
+overview: An operating system (OS) manages computer hardware resources and provides common execution services for application software.
+
+## Kernel and User Modes
+Modern operating system architectures enforce a dual-mode operation separating kernel mode from user mode. The kernel manages core hardware access, system calls, virtual memory translation, and CPU context switching while preventing user applications from corrupting critical system memory.
+
+## Monolithic vs Microkernel Designs
+In a monolithic operating system kernel like Linux, memory management, process scheduling, file systems, and device drivers all execute within a unified kernel address space. Conversely, a microkernel architecture delegates non-essential OS services to user-space daemons communicating via IPC.

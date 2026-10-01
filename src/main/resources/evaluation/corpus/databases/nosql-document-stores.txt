@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-03-18
+category: databases
+language: English
+title: NoSQL Databases and Distributed Document Stores
+overview: NoSQL databases provide flexible schema designs, horizontal scaling, and specialized data models for web-scale workloads.
+
+## NoSQL Data Models
+NoSQL systems encompass document stores (MongoDB, Couchbase), key-value databases (Redis, DynamoDB), wide-column stores (Cassandra), and graph databases (Neo4j).
+
+## The CAP Theorem and Consistency
+The CAP theorem states that a distributed data store can simultaneously provide at most two of Consistency, Availability, and Partition tolerance. Many NoSQL systems adopt eventual consistency.

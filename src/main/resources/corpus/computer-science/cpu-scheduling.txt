@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-03-10
+title: CPU Scheduling Algorithms
+overview: CPU scheduling is a process that allows one process to use the CPU while another process is on hold due to unavailability of resources like I/O.
+
+## Preemptive vs Non-Preemptive
+Preemptive scheduling allows the operating system to interrupt a running task, whereas non-preemptive scheduling forces tasks to run until completion or voluntary yield.
+
+## Multi-level Queue Scheduling
+Processes are classified into distinct priority groups. Each queue maintains its own scheduling strategy such as Round Robin or Shortest Remaining Time First.

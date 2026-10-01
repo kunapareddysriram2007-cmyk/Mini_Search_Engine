@@ -1,0 +1,12 @@
+type: Article
+date: 2024-03-15
+category: databases
+language: English
+title: Relational Database Management Systems and SQL
+overview: Relational database management systems (RDBMS) organize data into structured tables governed by relational algebra.
+
+## Relational Model and Constraints
+RDBMS models enforce schema integrity through primary keys, foreign keys, unique constraints, and normal forms (1NF, 2NF, 3NF, BCNF) to eliminate redundant data anomaly.
+
+## SQL Query Processing
+Structured Query Language (SQL) provides declarative query syntax. The database parser constructs an abstract syntax tree and optimizes joins (nested loop join, hash join, merge join).

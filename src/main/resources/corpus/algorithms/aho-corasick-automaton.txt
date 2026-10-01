@@ -1,0 +1,10 @@
+type: Article
+date: 2024-03-15
+title: Aho-Corasick Multi-Pattern Matching
+overview: Aho-Corasick constructs a finite-state trie automaton with failure links, allowing simultaneous multi-pattern dictionary search in a single text pass.
+
+## Failure Links via BFS
+Failure links are constructed level-by-level using breadth-first search queues, pointing to the longest proper suffix node that exists in the trie.
+
+## Text Scanning Complexity
+Text scanning traverses state transitions in O(n + z) time where z is total match output count, ideal for keyword filtering and partial matching modes.

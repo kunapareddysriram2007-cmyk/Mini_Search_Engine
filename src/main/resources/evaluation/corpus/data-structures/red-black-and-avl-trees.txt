@@ -1,0 +1,12 @@
+type: Article
+date: 2024-03-03
+category: data-structures
+language: English
+title: Balanced Binary Search Trees: Red-Black and AVL
+overview: Self-balancing binary search trees maintain O(log n) height guarantees through tree rotations during insert and delete.
+
+## AVL Tree Strict Balance
+AVL trees strictly maintain a balance factor of at most 1 between left and right subtrees, providing faster lookup times at the expense of more frequent tree rotations during updates.
+
+## Red-Black Tree Properties
+Red-Black trees use node coloring rules (root is black, no consecutive red nodes, equal black-height) to guarantee that the longest path is at most twice the length of the shortest path.

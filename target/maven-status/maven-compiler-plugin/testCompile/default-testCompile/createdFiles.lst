@@ -1,12 +1,16 @@
+com\minisearchengine\evaluation\SearchEngineEvaluationTest.class
 com\minisearchengine\core\ds\CustomHashMapAndSetTest$1MinHashKey.class
 com\minisearchengine\core\ds\CustomPriorityQueueAndQueueTest.class
 com\minisearchengine\engine\EngineComponentsTest$DocumentTest.class
 com\minisearchengine\engine\EngineComponentsTest$InvertedIndexTest.class
+com\minisearchengine\engine\SearchEngineTest$1.class
 com\minisearchengine\core\ds\CustomSortTest.class
 com\minisearchengine\core\ds\CustomSortTest$1NonComparableItem.class
 com\minisearchengine\core\string\SuffixArrayBuilderTest.class
 com\minisearchengine\engine\EngineComponentsTest.class
 com\minisearchengine\engine\EngineComponentsTest$TextNormalizerTest.class
+com\minisearchengine\engine\SearchEngineTest.class
+com\minisearchengine\engine\ClasspathCorpusLoaderTest.class
 com\minisearchengine\engine\EngineComponentsTest$PositionalIndexTest.class
 com\minisearchengine\core\string\AhoCorasickTest.class
 com\minisearchengine\engine\EngineComponentsTest$PipelineIntegrationTest.class

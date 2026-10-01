@@ -1,0 +1,44 @@
+type: Wikipedia
+date: 2023-11-01
+title: Абхъазыбзэ
+overview: Апхъазыбзэ () — апхъазмэ ябз, къаукъаз бзэунагъом и адыгэ-апхъаз бзэкупым хахьэ. Абазэбзэм лъэшэу текIырэп, зэгурIоныгъэ яI. Адыгэмэ афэблагъ нэмыIэми, абзэхэр зэгурыIохэрэп. ISO 639-1: ab, ISO 639-2: abk, ISO 639-3: abk. ДунаемкIэ нэбгырэ мин 100-м фэдиз рэгущаIэх.
+
+## Overview
+Апхъазыбзэ () — апхъазмэ ябз, къаукъаз бзэунагъом и адыгэ-апхъаз бзэкупым хахьэ. Абазэбзэм лъэшэу текIырэп, зэгурIоныгъэ яI. Адыгэмэ афэблагъ нэмыIэми, абзэхэр зэгурыIохэрэп. ISO 639-1: ab, ISO 639-2: abk, ISO 639-3: abk. ДунаемкIэ нэбгырэ мин 100-м фэдиз рэгущаIэх.
+
+## Section 1
+Алфыбэ
+
+## Section 2
+Апхъаз литературэр
+
+## Section 3
+Фэгъэхьыгъэ зэпыщэхэр
+
+## Section 4
+Abkhaz alphabet and pronunciation (Omniglot)
+
+## Section 5
+აფხაზური სამწიგნობრო ენის ქართულ გრაფიკაზე გადაყვანის ისტორიიდან
+
+## Section 6
+Из истории перехода абхазского книжного языка на грузинскую графику
+
+## Section 7
+Abkhaz entry in LanguageServer (University of Graz)
+
+## Section 8
+Abkhaz entry in The Rosetta Project
+
+## Section 9
+Abkhaz at Language Museum
+
+## Section 10
+Example of Abkhaz language.
+
+## Section 11
+Корпус   абхазского   языка.
+
+## Section 12
+Бзэхэр
+

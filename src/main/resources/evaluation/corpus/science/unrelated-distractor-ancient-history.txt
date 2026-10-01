@@ -1,0 +1,9 @@
+type: Wikipedia
+date: 2024-05-18
+category: science
+language: English
+title: Ancient Mediterranean Archaeological Excavations
+overview: Archaeological excavations in the Mediterranean basin reveal pottery artifacts, stone architecture, and ancient agricultural irrigation techniques.
+
+## Bronze Age Trade Routes
+Bronze Age civilizations established maritime trade routes across the Aegean Sea, exchanging copper ingots, ceramic pottery, olive oil, and bronze tools between coastal settlements.

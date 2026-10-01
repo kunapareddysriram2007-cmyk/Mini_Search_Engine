@@ -1,0 +1,12 @@
+type: Guide
+date: 2024-05-01
+category: programming-languages
+language: English
+title: Garbage Collection and Automatic Memory Management
+overview: Garbage collection automatically reclaims heap memory allocated by programs when objects are no longer reachable.
+
+## Tracing Garbage Collectors
+Mark-and-sweep collectors traverse root object references to mark reachable memory, sweeping unmarked memory. Generational collectors segregate young and old objects based on survival age.
+
+## Reference Counting and Stop-the-World
+Reference counting increments object reference counters, deallocating immediately upon reaching zero but struggling with cyclic references unless accompanied by cycle detectors.

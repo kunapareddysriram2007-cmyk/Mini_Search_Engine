@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-04-22
+category: web-development
+language: English
+title: REST API Design Principles and Best Practices
+overview: Representational State Transfer (REST) is a software architectural style for building scalable distributed web services.
+
+## REST Constraints
+Key REST constraints include client-server separation, statelessness, cacheability, uniform interface (URI resource naming), and layered system architecture.
+
+## HTTP Verbs and Status Codes
+RESTful web APIs map operations to HTTP methods: GET (retrieve), POST (create), PUT/PATCH (update), and DELETE (remove), returning standard HTTP status codes (200 OK, 201 Created, 400 Bad Request, 404 Not Found).

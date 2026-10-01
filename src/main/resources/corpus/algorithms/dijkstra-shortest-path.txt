@@ -1,0 +1,10 @@
+type: Reference
+date: 2024-04-12
+title: Dijkstra Shortest Path Algorithm
+overview: Dijkstra's algorithm computes single-source shortest paths in weighted graphs with non-negative edge weights.
+
+## Priority Queue Optimization
+Using min-heap priority queues reduces vertex distance update time, yielding O((V + E) log V) time complexity.
+
+## Relaxation Step
+Distance relaxation updates target vertex distances if passing through the current unvisited vertex yields a shorter total path cost.

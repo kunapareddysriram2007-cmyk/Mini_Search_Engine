@@ -113,6 +113,11 @@ public class PositionalInvertedIndex {
         return index.size();
     }
 
+    /** Returns all terms currently in the vocabulary. */
+    public CustomArrayList<String> getVocabulary() {
+        return index.keyList();
+    }
+
     // ---------------------------------------------------------
     // Private helpers
     // ---------------------------------------------------------

@@ -1,0 +1,11 @@
+type: Wikipedia
+date: 2023-11-01
+title: Adat Acèh
+overview: Adat bak Po Teumeureuhôm, hukôm bak Syiah Kuala, Qanun bak Putroë Phang, Reusam bak Béntara, meunankeuh salah saboh baréh haba nyang na lam Hadih Maja. Nyoëkeuh sibagoë meuneumat masalah hukôm ngön adat nyang geunguy lé ureuëng Acèh. Hukôm nyang na di Acèh geuatô meunurôt agama Islam, nyang peupu...
+
+## Overview
+Adat bak Po Teumeureuhôm, hukôm bak Syiah Kuala, Qanun bak Putroë Phang, Reusam bak Béntara, meunankeuh salah saboh baréh haba nyang na lam Hadih Maja. Nyoëkeuh sibagoë meuneumat masalah hukôm ngön adat nyang geunguy lé ureuëng Acèh. Hukôm nyang na di Acèh geuatô meunurôt agama Islam, nyang peuputôh lé para ulama, teuma nyang peulaksana hukôm nyan nakeuh umara, ureuëng nyang pimpin rakyat. Keu peukara adat, nyoë geuatô lé sultan, raja nyang mat dèëlat lam nanggroë.
+
+## Section 1
+Reusam Acèh
+

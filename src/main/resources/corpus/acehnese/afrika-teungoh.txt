@@ -1,0 +1,23 @@
+type: Wikipedia
+date: 2023-11-01
+title: Afrika Teungoh
+overview: Neugara-neugara nyang rôh lam kawasan Afrika Teungoh nakeuh:
+
+## Overview
+Neugara-neugara nyang rôh lam kawasan Afrika Teungoh nakeuh:
+
+## Section 1
+Burundi
+
+## Section 2
+Republik Afrika Teungoh
+
+## Section 3
+Chad
+
+## Section 4
+Republik Demokratik Kongo
+
+## Section 5
+Rwanda
+

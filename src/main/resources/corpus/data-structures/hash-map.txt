@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-02-14
+title: Hash Map and Separate Chaining
+overview: A Hash Map is an associative container that maps keys to values using a hash function to achieve average O(1) lookup and insertion performance.
+
+## Collision Resolution
+Collision handling strategies include open addressing with linear or quadratic probing, and separate chaining using linked lists or secondary trees per bucket.
+
+## Hash Function Design
+High-quality hash functions distribute keys uniformly across buckets using bitwise mixing to minimize primary clustering and performance degradation.

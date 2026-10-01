@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-02-17
+title: Breadth-First Search Algorithm
+overview: Breadth-First Search (BFS) explores graph vertices level by level using FIFO queues to compute unweighted shortest paths.
+
+## Traversal Mechanics
+Starting from a source vertex, BFS marks adjacent unvisited neighbors, enqueues them into a FIFO queue, and visits vertices in order of distance.
+
+## Applications
+BFS is applied in unweighted network routing, connected component analysis, web crawler URL traversal, and state graph state-space search.

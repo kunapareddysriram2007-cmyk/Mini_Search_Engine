@@ -1,0 +1,16 @@
+type: Wikipedia
+date: 2024-01-15
+title: Operating System
+overview: An operating system (OS) is system software that manages computer hardware, software resources, and provides common services for computer programs.
+
+## Definition and Purpose
+An operating system acts as an intermediary between users and computer hardware. The purpose of an operating system is to provide an environment in which a user can execute programs conveniently and efficiently. The operating system must keep track of all processes and allocate resources accordingly.
+
+## Core Components
+The operating system is primarily composed of the kernel, which handles core functions such as process management, memory management, device management, and system calls. The kernel operates at the lowest level of the operating system, interfacing directly with the hardware. Above the kernel sits the shell and other system utilities.
+
+## Types of Operating Systems
+Operating systems can be classified into several types: batch operating systems, time-sharing operating systems, distributed operating systems, network operating systems, and real-time operating systems. Modern desktop operating systems include Windows, macOS, and Linux.
+
+## Process Management
+The operating system must keep track of all processes and allocate processor time between them according to scheduling algorithms. Process management involves creating and deleting both user and system processes, suspending and resuming processes, and providing mechanisms for process synchronization.

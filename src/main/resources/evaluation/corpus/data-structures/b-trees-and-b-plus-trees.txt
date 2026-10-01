@@ -1,0 +1,12 @@
+type: Wikipedia
+date: 2024-03-01
+category: data-structures
+language: English
+title: B-Trees and B+ Trees in Storage Systems
+overview: B-Trees and B+ Trees are self-balancing multi-way search trees optimized for block storage and database index structures.
+
+## Node Structure and High Fanout
+Unlike binary search trees, a B-tree node holds multiple keys and child pointers. The high fanout keeps tree depth low (typically 3 to 4 levels for millions of records), minimizing disk I/O operations.
+
+## B+ Tree Leaf Chain for Range Scans
+In a B+ Tree, all record data pointers reside strictly in leaf nodes, which are linked together in a doubly linked list. This enables efficient sequential range queries without tree backtracking.

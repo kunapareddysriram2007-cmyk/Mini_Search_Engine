@@ -1,0 +1,10 @@
+type: Wikipedia
+date: 2024-01-25
+title: Levenshtein Edit Distance
+overview: Levenshtein distance measures the minimum number of single-character edits (insertions, deletions, substitutions) needed to transform one string into another.
+
+## Dynamic Programming Matrix
+The standard algorithm uses an (m+1) x (n+1) matrix requiring O(m * n) time and O(m * n) space complexity.
+
+## Space Optimization and Early Abandonment
+Space complexity reduces to O(m) using two row arrays. Early abandonment stops matrix evaluation when minimum row entries exceed threshold k.

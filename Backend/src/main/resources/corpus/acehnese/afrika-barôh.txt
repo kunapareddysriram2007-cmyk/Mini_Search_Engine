@@ -1,0 +1,41 @@
+type: Wikipedia
+date: 2023-11-01
+title: Afrika Barôh
+overview: Neugara-neugara nyang rôh lam kawasan Afrika Utara nakeuh:
+
+## Overview
+Neugara-neugara nyang rôh lam kawasan Afrika Utara nakeuh:
+
+## Section 1
+Aljazair
+
+## Section 2
+Libya
+
+## Section 3
+Maroko
+
+## Section 4
+Mesir
+
+## Section 5
+Sahara Barat
+
+## Section 6
+Sudan
+
+## Section 7
+Tunisia
+
+## Section 8
+Meujan, neugara-neugara nyoë geupeurôh cit lam kawasan Afrika Utara:
+
+## Section 9
+Mauritania
+
+## Section 10
+Ethiopia
+
+## Section 11
+Eritrea
+

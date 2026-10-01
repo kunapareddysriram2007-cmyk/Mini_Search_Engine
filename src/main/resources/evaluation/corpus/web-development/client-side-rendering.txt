@@ -1,0 +1,12 @@
+type: Article
+date: 2024-04-25
+category: web-development
+language: English
+title: Client-Side Rendering and Modern UI Frameworks
+overview: Client-side rendering generates dynamic HTML in the user browser using JavaScript frameworks and reactive component models.
+
+## Virtual DOM and Component Trees
+Modern frontend frameworks like React use a Virtual DOM to compute minimal DOM reconciliation diffs, updating UI components efficiently without full page reloads.
+
+## State Management and Routing
+Single-page applications manage UI state reactively, synchronizing URL route changes using client-side router history APIs and asynchronous REST API fetching.
