@@ -1,0 +1,27 @@
+# Maven
+/target/
+**/target/
+
+# Node / Frontend
+/node_modules/
+**/node_modules/
+/dist/
+**/dist/
+
+# pnpm store
+/.pnpm-store/
+
+# Editor / OS
+.vscode/
+.idea/
+*.log
+.DS_Store
+
+# Agent / ephemeral
+.kilo/
+.mise.toml
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
